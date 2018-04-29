@@ -33,8 +33,6 @@ namespace ShopTrackify
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
-            services.AddScoped<IProductItemService, ProductItemService>();
-
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 

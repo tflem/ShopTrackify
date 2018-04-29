@@ -15,6 +15,8 @@ namespace ShopTrackify.Data
         {
         }
 
+        public DbSet<ProductItem> Products { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
